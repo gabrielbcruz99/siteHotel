@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8"> <!-- garantir a acentuação -->
+    <link rel="stylesheet" href="style.css">
+    <title>Hotel paraíso</title>
+</head>
+
+<body>
+    <h1>Hotel paraíso</h1>
+    <nav>
+        <ul class="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="reserva.html"><li>Reserva</li></a>
+    
+        </ul>
+    </nav>
+    
+    <div class="form"></div>
+    <form method="POST" action="exibe_hotel2.php">
+        <fieldset>
+            <legend>Dados do cliente</legend>
+            <label>
+                Nome:
+            </label>
+            <input type="text" name="nome" required>
+            <br><br>
+            <label>
+                Sexo:
+            </label>
+            <select name="sexo" required>
+                <option value="" selected></option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+
+            <br><br>
+            <label>
+                Email:
+            </label>
+            <input type="email" name="email" required>
+        </fieldset>
+        <fieldset>
+            <legend>check-in</legend>
+            <lable>Data de chegada</lable>
+            <input type="date" name="data_chegada" required>
+            <br><br>
+            <lable>Número de noites</lable>
+            <input type="number" name="numero_noites" size="10" min="2" value="2">
+            <br><br>
+            <lable>Número de hóspedes</lable>
+            <input type="number" name="numero_hospedes" min="1" value="1">
+            <br><br>
+            <lable>Mensagem</lable>
+            <textarea rows="4" cols="50" name="mensagem"></textarea>
+            <br><br>
+        </fieldset>
+        <br><br>
+        <input type="submit">
+    </form>
+</div>
+<footer>
+    <p>Desenvolvido por: Gabriel Barbosa Cruz<br>
+    <a href="gabrielbcruz.99@gmail.com">gabrielbcruz.99@gmail.com</a></p>
+  </footer>
+</body>
+</html>
+
+ 
